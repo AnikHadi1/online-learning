@@ -10,7 +10,7 @@ import {
   FaPhoneAlt,
   FaYoutube,
 } from "react-icons/fa";
-import { default as ATag, default as ATagWB } from "./ATagWB";
+import A from "./A";
 
 export default function Footer() {
   return (
@@ -27,24 +27,24 @@ export default function Footer() {
             <li>
               <ul className="flex items-center gap-5">
                 <li className="bg-white p-2 rounded-md">
-                  <ATagWB link={"https://www.facebook.com/"}>
+                  <A target={"_blank"} link={"https://www.facebook.com/"}>
                     <FaFacebookF className="text-blue  text-3xl" />
-                  </ATagWB>
+                  </A>
                 </li>
                 <li className="bg-white p-2 rounded-md">
-                  <ATagWB link={"https://www.youtube.com/"}>
+                  <A target={"_blank"} link={"https://www.youtube.com/"}>
                     <FaYoutube className="text-red-500  text-3xl" />
-                  </ATagWB>
+                  </A>
                 </li>
                 <li className="bg-white p-2 rounded-md">
-                  <ATagWB link={"https://www.instagram.com/"}>
+                  <A target={"_blank"} link={"https://www.instagram.com/"}>
                     <FaInstagram className="text-red-400  text-3xl" />
-                  </ATagWB>
+                  </A>
                 </li>
                 <li className="bg-white p-2 rounded-md">
-                  <ATagWB link={"https://bd.linkedin.com/"}>
+                  <A target={"_blank"} link={"https://bd.linkedin.com/"}>
                     <FaLinkedinIn className="text-blue  text-3xl" />
-                  </ATagWB>
+                  </A>
                 </li>
               </ul>
             </li>
@@ -72,37 +72,43 @@ export default function Footer() {
           <ul className="flex flex-col gap-2">
             <li className="flex items-center gap-5">
               <span>
-                <ATag link={"tel:+8801956180989"}>
+                <A link={"tel:+8801956180989"}>
                   <FaPhoneAlt />
-                </ATag>
+                </A>
               </span>
               <span>
-                <ATag link={"tel:+8801956180989"}>+8801956180989</ATag>
+                <A link={"tel:+8801956180989"}>+8801956180989</A>
               </span>
             </li>
             <li className="flex items-center gap-5">
               <span>
-                <ATag link={"mailto:softtechtechnology12@gmail.com"}>
+                <A link={"mailto:softtechtechnology12@gmail.com"}>
                   <FaEnvelope />
-                </ATag>
+                </A>
               </span>
               <span>
-                <ATag link={"mailto:softtechtechnology12@gmail.com"}>
+                <A link={"mailto:softtechtechnology12@gmail.com"}>
                   softtechtechnology12@gmail.com
-                </ATag>
+                </A>
               </span>
             </li>
             <li className="flex items-center gap-5">
               <span>
-                <ATagWB link={"https://maps.app.goo.gl/3ndum2q7DTXLMXrW8"}>
+                <A
+                  link={"https://maps.app.goo.gl/3ndum2q7DTXLMXrW8"}
+                  target={"_blank"}
+                >
                   <FaMapMarkerAlt />
-                </ATagWB>
+                </A>
               </span>
               <span>
-                <ATagWB link={"https://maps.app.goo.gl/3ndum2q7DTXLMXrW8"}>
+                <A
+                  link={"https://maps.app.goo.gl/3ndum2q7DTXLMXrW8"}
+                  target={"_blank"}
+                >
                   MTB, BUILDING, Level-13 Sheikh Hasina Software Technology
                   Park, Jessore-7400, Bangladesh
-                </ATagWB>
+                </A>
               </span>
             </li>
           </ul>
