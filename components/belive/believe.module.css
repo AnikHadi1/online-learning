@@ -1,0 +1,264 @@
+.subContainer {
+  margin-top: 5rem;
+  display: flex;
+  background: #354895;
+  padding: 60px 60px 250px;
+  border-radius: 40px;
+}
+.descContainer {
+  flex: 1;
+  color: var(--text);
+  margin-top: 3rem;
+  padding-right: 80px;
+}
+.descContainer h2 {
+  font-size: 2rem;
+}
+.descContainer p {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 170%;
+  color: #d0deef;
+}
+
+.sideContainer {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sideContainer div {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  background-color: #fff;
+  height: 100px;
+  flex: 0 0 50%;
+  max-width: calc(50% - 50px);
+  background: #ffffffe6;
+  -webkit-backdrop-filter: blur(132.5px);
+  backdrop-filter: blur(132.5px);
+  border-radius: 15px;
+  padding: 22px 20px;
+  gap: 12px;
+  font-family: Baloo Da\2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  transition: all 0.5s ease;
+  cursor: default;
+}
+
+.slideContainer {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.slideSubContainer {
+  width: 85%;
+  margin: auto;
+  margin-top: -8rem;
+}
+.slider {
+  background-color: #fff;
+  box-shadow: 0 2px 30px -6px #00000026;
+  padding: 40px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.slider div p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #454c7e;
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
+.slider div h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #232c6a;
+  margin-bottom: 2px;
+}
+
+.slider div h2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #676ea0;
+}
+
+.imgContainer {
+  position: absolute;
+  width: 33%;
+  height: 80%;
+  right: 5%;
+  bottom: 10%;
+}
+.img {
+  object-fit: contain;
+  width: fit-content;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.btnContainer {
+  position: absolute;
+  top: 36%;
+  width: 100%;
+  color: var(--text);
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--text);
+  color: var(--btn);
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 2px 30px -6px #00000026;
+}
+
+.btn:hover {
+  background-color: var(--btn);
+  color: var(--text);
+}
+
+.qIcon {
+  font-size: 4rem;
+  color: #354895d2;
+}
+
+/*! Styles for screens smaller than or equal to 600px */
+@media (max-width: 450px) {
+  .subContainer {
+    flex-direction: column;
+  }
+
+  .slideSubContainer {
+    margin-top: -12rem;
+  }
+  .sideContainer {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .sideContainer div {
+    width: 400px;
+    max-width: 95%;
+  }
+  .slider {
+    height: 55vh;
+  }
+  .imgContainer {
+    width: 65%;
+    height: fit-content;
+    right: 17%;
+    bottom: 5%;
+  }
+  .img {
+    height: 80%;
+  }
+  .btnContainer {
+    top: 32%;
+  }
+}
+
+/*! Styles for screens smaller than or equal to 600px */
+@media (min-width: 451px) and (max-width: 640px) {
+  .subContainer {
+    flex-direction: column;
+  }
+
+  .slideSubContainer {
+    margin-top: -12rem;
+  }
+  .sideContainer {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .sideContainer div {
+    width: 400px;
+    max-width: calc(80% - 30px);
+  }
+  .slider {
+    height: 55vh;
+  }
+  .imgContainer {
+    width: 65%;
+    height: fit-content;
+    right: 17%;
+    bottom: 5%;
+  }
+  .img {
+    height: 80%;
+  }
+  .btnContainer {
+    top: 32%;
+  }
+}
+
+/*! Styles for screens between 601px and 900px md */
+@media (min-width: 641px) and (max-width: 768px) {
+  .subContainer {
+    flex-direction: column;
+  }
+  .slideSubContainer {
+    margin-top: -12rem;
+  }
+  .sideContainer {
+    margin-top: 4rem;
+  }
+  .slider {
+    height: 55vh;
+  }
+  .imgContainer {
+    width: 55%;
+    height: fit-content;
+    right: 20%;
+    bottom: 5%;
+  }
+  .img {
+    height: 80%;
+  }
+  .btnContainer {
+    top: 32%;
+  }
+}
+
+/*! Styles for screens between 601px and 900px md */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .subContainer {
+    flex-direction: column;
+  }
+  .sideContainer {
+    margin-top: 4rem;
+  }
+  .slideSubContainer {
+    margin-top: -14rem;
+  }
+  .slider {
+    height: 55vh;
+  }
+  .imgContainer {
+    height: fit-content;
+    right: 33%;
+    bottom: 10%;
+  }
+  .img {
+    height: 100%;
+  }
+  .btnContainer {
+    top: 38%;
+  }
+}

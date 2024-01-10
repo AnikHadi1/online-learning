@@ -1,0 +1,134 @@
+.not_found_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50vh;
+}
+
+.not_found_container h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.not_found_container p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.not_found_container a {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+  margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: var(--btn);
+}
+
+.not_found_container a:hover {
+  background-color: var(--btnH);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.contact {
+  background-image: url("https://i.ibb.co/C2b6d0V/ztyqwa0nt9kqkaddi8rb.png");
+}
+
+.academicProgram {
+  background-image: url(/academic_program_bg.png);
+}
+
+/*! Styles for screens smaller than or equal to 600px */
+@media (max-width: 450px) {
+  .carousel,
+  .videoSlider,
+  .academicProgram,
+  .believe,
+  .contact {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*! Styles for screens smaller than or equal to 600px */
+@media (min-width: 451px) and (max-width: 640px) {
+  .carousel,
+  .videoSlider,
+  .academicProgram,
+  .believe,
+  .contact {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*! Styles for screens between 601px and 900px md */
+@media (min-width: 641px) and (max-width: 768px) {
+  .carousel,
+  .videoSlider,
+  .academicProgram,
+  .believe,
+  .contact {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*! Styles for screens between 601px and 900px md */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carousel,
+  .videoSlider,
+  .academicProgram,
+  .believe,
+  .contact {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/*! Styles for screens larger than 900px  lg */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .carousel,
+  .videoSlider,
+  .academicProgram,
+  .believe,
+  .contact {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .carousel,
+  .videoSlider,
+  .academicProgram,
+  .believe,
+  .contact {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}

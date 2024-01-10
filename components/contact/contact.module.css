@@ -1,0 +1,158 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border-radius: 20px;
+  padding: 8rem 0;
+  gap: 4rem;
+}
+
+.subContainer {
+  position: relative;
+  grid-column: 1 / span 8;
+}
+.firstSection {
+  background-image: linear-gradient(to right, #daf5fd, #fce6c3);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+}
+
+.firstSection h1 {
+  font-size: 24px;
+  margin: 1rem 0;
+}
+
+.firstSection p {
+  font-size: 16px;
+  margin: 1rem 0;
+}
+
+.firstSection h2 {
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+.firstSection button {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+  margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0.8rem 4.8rem;
+  border-radius: 10px;
+  background-color: var(--btn);
+}
+
+.imgContainer {
+}
+
+.img {
+  width: 20%;
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.secondSection {
+  grid-column: 9 / span 4;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.secondFirstSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  background-color: #ffcaca;
+}
+.secondFirstSec div h1,
+.secondSecondSec div h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.secondFirstSec div button,
+.secondSecondSec div button {
+  padding: 0.6rem 2rem;
+  border-radius: 10px;
+  background-color: var(--text);
+  justify-content: space-between;
+}
+
+.secondSecondSec {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: #ffcaca;
+}
+
+/*! Styles for screens smaller than or equal to 600px */
+@media (max-width: 450px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .img {
+    width: 30%;
+  }
+  .secondSection {
+    flex-direction: column;
+    gap: 3rem;
+    margin: auto;
+  }
+}
+
+/*! Styles for screens smaller than or equal to 600px */
+@media (min-width: 451px) and (max-width: 640px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .img {
+    width: 30%;
+  }
+  .secondSection {
+    flex-direction: column;
+    gap: 3rem;
+    margin: auto;
+  }
+}
+
+/*! Styles for screens between 601px and 900px md */
+@media (min-width: 641px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .secondSection {
+    flex-direction: column;
+    gap: 3rem;
+    margin: auto;
+  }
+}
+
+/*! Styles for screens between 601px and 900px md */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .secondSection {
+    flex-direction: column;
+    gap: 3rem;
+    margin: auto;
+  }
+}

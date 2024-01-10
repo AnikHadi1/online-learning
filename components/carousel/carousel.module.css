@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  height: 60vh;
+  margin: auto;
+  position: relative;
+}
+
+.carousel_slide {
+  /* width: 100%; */
+}
+.carousel_list {
+  /* flex: 1; */
+  width: 100vw;
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
+}
+
+.img {
+  /* object-fit: contain; */
+}
+
+/*! start Button prev and next */
+.btnContainer {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  color: var(--text);
+}
+
+.btnContainer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  border-style: none;
+  font-weight: 700;
+}
+/*? End Button prev and next */
+
+/*! Start dots Btn */
+.dotBtn {
+  position: absolute;
+  bottom: 5.5rem;
+  color: var(--text);
+  left: 0px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.dotBtn_item {
+  list-style-type: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #fff5;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.dotBtn_item.active {
+  width: 2rem;
+}
+/*? End dots Btn */

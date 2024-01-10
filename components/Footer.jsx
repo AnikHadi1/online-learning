@@ -14,10 +14,10 @@ import A from "./A";
 
 export default function Footer() {
   return (
-    <div className="px-pad mt-6  py-10">
-      <div className="grid grid-cols-4  text-f-text">
-        <div>
-          <ul className="grid gap-3">
+    <div className="lg:px-pad md:px-md-pad mt-6  py-10">
+      <div className="grid sm:grid-cols-1  md:grid-cols-2 gap-y-5 lg:grid-cols-4 sm:px-sm-pad text-f-text gap-2 ">
+        <div className="px-6">
+          <ul className="grid gap-3  ">
             <li className="">
               <Image src={logo} alt="logo" width={50} height={20} />
             </li>
@@ -50,7 +50,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="">
+        <div className="px-6">
           <h1 className="mb-5 font-extrabold text-2xl">UseFull Link</h1>
           <ul className="flex flex-col gap-2">
             <li>
@@ -67,7 +67,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="px-6">
           <h1 className="mb-5 font-extrabold text-2xl">Contact</h1>
           <ul className="flex flex-col gap-2">
             <li className="flex items-center gap-5">
@@ -86,7 +86,7 @@ export default function Footer() {
                   <FaEnvelope />
                 </A>
               </span>
-              <span>
+              <span className="truncate">
                 <A link={"mailto:softtechtechnology12@gmail.com"}>
                   softtechtechnology12@gmail.com
                 </A>
@@ -113,7 +113,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="px-6">
           <h1 className="mb-5 font-extrabold text-2xl">Company Information</h1>
           <p className="mb-5">
             Trade licence No: <span>TRAD/DNCC/037245/2022</span>
@@ -124,7 +124,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border border-[#51598730] h-0 my-5" />
-      <div className="flex justify-between items-center text-f-text">
+      <div className="flex justify-between items-center flex-col lg:flex-row gap-4 text-f-text">
         <ul className="flex gap-2 items-center ">
           <li>
             <Link href="/terms-conditions">Terms & Conditions</Link>

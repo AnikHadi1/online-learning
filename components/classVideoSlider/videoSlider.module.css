@@ -1,0 +1,193 @@
+.container {
+  margin-top: 5rem;
+}
+
+.subContainer h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--textSoft);
+}
+
+.subContainer h4 {
+  margin-top: 25px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  color: var(--textSoft);
+}
+
+.subContainer hr {
+  margin: 0;
+  padding: 0;
+}
+
+.classBtn {
+  display: flex;
+  gap: 10px;
+  border: none;
+  padding: 10px 20px 0 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+
+.classBtn button {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+}
+
+.classBtn button:hover {
+  background-color: var(--textSoft);
+  border-radius: 10px;
+}
+
+.classBtn button.active {
+  border-bottom: 3px solid var(--btn);
+}
+
+/*! start Video Slider */
+.sliderContainer {
+  background-image: url(https://res.cloudinary.com/cross-border-education-technologies-pte-ltd/image/upload/v1670309928/mh6hpcqrlb4ts68ia1gg.jpg);
+  background-repeat: repeat-x;
+  background-size: cover;
+  padding: 0 2rem;
+  border: 3px solid #fff;
+  -webkit-backdrop-filter: blur(82.5px);
+  backdrop-filter: blur(82.5px);
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+.sliderSubContainer {
+  width: 100%;
+  position: relative;
+}
+.slider {
+  width: 88%;
+  height: 40vh;
+  margin: 2rem auto;
+  display: flex;
+  gap: 15px;
+  /* padding: 20px 50px 10px 50px; */
+}
+
+.card {
+  width: 300px;
+  height: 100%;
+  box-shadow: 0 1px 1px 1px var(--bgSoft);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: 0.3s linear;
+}
+.card:hover {
+  margin-top: -10px;
+}
+.imgContainer {
+  flex: 1;
+  position: relative;
+}
+.img {
+  border-radius: 10px 10px 0 0;
+}
+.details {
+  padding: 1.4rem;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  overflow: hidden;
+}
+.details p {
+  font-weight: 400;
+  color: var(--textSoft);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* border: 2px solid red; */
+}
+
+.btnContainer {
+  position: absolute;
+  top: 45%;
+  /* padding-left: 0.25rem; */
+  /* padding-right: 0.25rem; */
+  width: 100%;
+  color: var(--text);
+  /* margin: auto; */
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0000002b;
+  border: none;
+  font-weight: 700;
+}
+/*? end Video Slider */
+
+/*! Styles for screens smaller than or equal to 600px */
+@media (max-width: 450px) {
+  .slider {
+    width: 90%;
+    height: 200vh;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 2rem 2rem 3rem;
+  }
+  .card {
+    width: 100%;
+    height: 24%;
+    margin: auto;
+  }
+}
+
+/*! Styles for screens smaller than or equal to 600px */
+@media (min-width: 451px) and (max-width: 640px) {
+  .slider {
+    width: 90%;
+    height: 200vh;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 2rem 2rem 3rem;
+  }
+  .card {
+    width: 100%;
+    height: 24%;
+    margin: auto;
+  }
+}
+
+/*! Styles for screens between 601px and 900px md */
+@media (min-width: 641px) and (max-width: 768px) {
+  .slider {
+    width: 90%;
+    height: 200vh;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 2rem 2rem 3rem;
+  }
+  .card {
+    width: 100%;
+    height: 24%;
+    margin: auto;
+  }
+}
+
+/*! Styles for screens between 601px and 900px md */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .slider {
+    width: 90%;
+    height: 80vh;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 2rem 2rem 3rem;
+  }
+  .card {
+    width: 45%;
+    height: 50%;
+    margin: auto;
+  }
+}

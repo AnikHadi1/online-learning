@@ -13,6 +13,8 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       spacing: {
+        'sm-pad': '10px',
+        "md-pad": "32px",
         'pad': '96px',
         '128': '32rem',
         '144': '36rem',
@@ -24,16 +26,7 @@ module.exports = {
         "bg-footer": "#439ddf",
         "f-text": "#515987",
         "btnColor": "#3f83f8",
-        'white': '#ffffff',
-        'blue': '#1fb6ff',
-        'purple': '#7e5bef',
-        'pink': '#ff49db',
-        'orange': '#ff7849',
-        'green': '#13ce66',
-        'yellow': '#ffc82c',
-        'gray-dark': '#273444',
-        'gray': '#8492a6',
-        'gray-light': '#d3dce6',
+        'white': '#ffffff'
       },
     }
   },
